@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap');
+
+// Modifaciones globales
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Oswald', sans-serif;
+    background-image: url(../img/5570173.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 90px;
+}
+
+h1 {
+    color: whitesmoke;
+}
+
+header {
+    padding: 0px;
+
+    nav {
+        display: flex;
+        justify-content: flex-end;
+
+        ul {
+            list-style-type: none;
+            margin-right: 0px;
+            display: flex;
+            // margin-left: 300px;
+
+            li {
+                // display: inline-block;
+                list-style: none;
+
+                .nav-link {
+                    display: block;
+                    text-decoration: none;
+                    color: white;
+                    padding: 0px;
+                    margin-right: 0px;
+                    margin-left: 40px;
+                    text-decoration: none;
+                    text-align: center;
+                }
+            }
+        }
+    }
+}
+
+footer {
+    color: whitesmoke;
+    padding: 0px;
+    margin-bottom: 0px;
+    margin-top: 30px;
+    background-color: black;
+}
+
+// I N D E X
+.main-index {
+
+    .index-section {
+        color: crimson;
+        text-align: center;
+        font-size: 15px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+        h2 {
+            color: white;
+            padding: 40px;
+            margin: 80px 40px 80px 40px;
+            border: 10px solid red;
+            position: static;
+            top: 40px;
+        }
+
+        p {
+            color: white;
+            padding: 0px;
+            margin-right: 0px;
+            margin-left: 1px;
+            margin-top: 50px;
+        }        
+    }
+}
+
+// C O N T A C TO
+.main-contacto {
+    height: 60vh;
+
+    form {
+        color: whitesmoke;
+        background-size: cover;
+        background-position: center;
+        width: 775px;
+        height: 100px;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+// ~C O M U N E S~
+.main-servicios, .main-componentes, .main-productos {
+    margin-top: 30px;
+
+    .grid-contenedor {
+        display: grid;
+        gap: 30px;
+        grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+        grid-auto-rows: 400px;
+
+        .grid-elemento {
+            background-color: rgb(174, 174, 174);
+            border-radius: 5%;
+            box-shadow: 8px 8px 5px rgba(255, 255, 255, 0.596);
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            .boton-comprar {
+                background-color: rgb(33, 110, 243);
+                color: white;
+                display: inline-block;
+                width: 60%;
+                height: 30px;
+                text-align: center;
+                border-radius: 20px;
+
+                display: grid;
+                place-items: center;
+            }
+
+            img {
+                width: 80%; 
+                height: 60%; 
+                object-fit: cover;
+                border-radius: 5%;
+            }
+            
+            h3 {
+
+            }
+
+            .descripcion {
+
+            }
+        }
+    }
+}
+
+// C O M P O N E N T E S 
+.main-componentes {
+
+}
+
+// P R O D U C T O S
+.main-productos {
+
+}
+
+// S E R V I C I O S
+.main-servicios {}
+
+
+@media screen and (max-width: 700px) {
+    header {
+        nav {
+            justify-content: center;
+
+            ul {
+                flex-direction: column;
+
+                li {
+                    .nav-link {
+                        margin-top: 15px;
+                        margin-left: 0;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 600px) {
+    body {padding: 25px;}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
